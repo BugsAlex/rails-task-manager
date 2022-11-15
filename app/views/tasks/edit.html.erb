@@ -1,0 +1,11 @@
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :complete %>
+  <%= f.number_field :complete %>
+  <%= f.submit %>
+<% end %>
+
+<%=link_to "back to list", tasks_path%>
